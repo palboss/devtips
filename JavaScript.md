@@ -20,6 +20,6 @@ var date = new Date();
 var UTCTime = Date.now() + date.getTimezoneOffset()*60*1000;
 ```
 
-#react 打包后，项目部署完毕，刷新页面报错（404）
-客户端路由要使用HashRouter，不要使用BrowserRouter。a 标签要加 # 
+# react 打包后，项目部署完毕，刷新页面报错（404）
+客户端路由要使用HashRouter，不要使用BrowserRouter。a 标签要加 \# 
 
