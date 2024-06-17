@@ -1,16 +1,16 @@
-#SQL 随机生成 0，1
+# SQL 随机生成 0，1
 ```SQL
 FLOOR(RAND(CHECKSUM(NEWID())) * 2)
 ```
-#SQL 随机生成 正负数 10
+# SQL 随机生成 正负数 10
 ```
 ROUND(RAND(CHECKSUM(NEWID())) * 10 - 10.0/2, 2)
 ```
-#SQL 取上一季度未
+# SQL 取上一季度未
 ```
 select DATEADD(DAY,-1,DATEADD(MONTH,-3,DATEADD(DAY,1,'2020-12-31')))
 ```
-#SQL 取上一 月初月未，周初周未
+# SQL 取上一 月初月未，周初周未
 ```
 SELECT DATEADD(DAY,-1,DATEADD(MONTH,-1,DATEADD(DAY,1,'2020-12-31')))
 SELECT DATEADD(MONTH,-1,CONVERT(CHAR(7),GETDATE(),120)+'-01')

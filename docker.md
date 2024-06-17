@@ -1,4 +1,4 @@
-#docker-compose
+# docker-compose
 ```
 docker-compose up -d
 docker-compose down
@@ -9,7 +9,7 @@ docker-compose restart
 
 docker-compose ps
 ```
-#docker-compose  ModuleNotFoundError: No module named 'XXX'
+# docker-compose  ModuleNotFoundError: No module named 'XXX'
 ```
 command: bash -c "PYTHONPATH=$$PWD/.. python3 -c 'import sys; print(sys.path)'"
 ```
