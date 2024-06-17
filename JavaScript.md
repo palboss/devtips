@@ -9,8 +9,8 @@ const myChart = new Chart(ctx, config);
 
 # javascript map函数
 ```javascript
-	config.data.labels = response.data.map(function (sh){
-              return sh['tday']
-          })
+config.data.labels = response.data.map(function (sh){
+		  return sh['tday']
+	  })
 ```
 
